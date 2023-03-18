@@ -1,0 +1,19 @@
+.box {
+  border: 1px solid #111;
+  width: 100px;
+  height: 100px;
+  /* display: inline; */
+  padding: 50px;
+}
+
+.red-border {
+  border: 1px solid red;
+  width: 100px;
+  height: 100px;
+  /* display: inline; */
+  padding: 50px;
+}
+
+.yellow-bgc {
+  background-color: yellow;
+}

@@ -1,4 +1,28 @@
 <router-outlet></router-outlet>
 <app-hello></app-hello>
+
+<!-- Day 3 - Data Binding -->
+<!-- <input type="text" [value]="user.name" [(ngModel)]="user.name" />
+<button class="btn btn-primary" (click)="handler()">click me!</button>
+<h2>{{ user.name }}</h2> -->
+
+<!-- Day 4 - ngIf -->
+<!-- <div style="display: flex; flex-direction: row; margin-bottom: 20px">
+  <button (click)="user.age = user.age - 1">-</button>
+  <p>{{ user.age }}</p>
+  <button (click)="user.age = user.age + 1">+</button>
+</div>
+<div *ngIf="user.age >= 18; else under18">This is sexy man</div>
+<ng-template #under18>You too young to see this content</ng-template> -->
+<!-- Day5 = ngFor -->
+<!-- <h1>Day 5 - ngFor</h1>
+<ul>
+  <li *ngFor="let user of user">
+    {{ user.name }} - {{ user.address }} - {{ user.age }}
+  </li>
+</ul> -->
+<!-- Day 6 - Class and Style Binding -->
+
+<div [class.red-border]="{check}"></div>
 <app-home></app-home>
-<!-- <app-about></app-about> -->
+<app-about></app-about>

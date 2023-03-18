@@ -22,12 +22,11 @@ handler() là một function trong app.component.ts
 `<input type = "text" [(ngModel)] = "name">`
 trong đó ngModel phải được import FormModel trong app.module.ts, lúc này nếu ta thay đổi giá trị của input thì name trong app.component.ts cũng được binding theo.
 
-## #ngIf
+## ngIf
 
 -là một structure directive
 
 ví dụ:
-
 `
 
 <div style="display: flex; flex-direction: row; margin-bottom: 20px">
@@ -41,20 +40,20 @@ ví dụ:
 ## ngFor
 
 - cũng là một structure directive
-ta gán \*ngFor ở đâu thì nó sẽ nhân bản theo vòng lặp ra các HTMLElement tương ứng
-ví dụ:
-`
-<h1>Day 5 - ngFor</h1>
-<ul *ngFor="let user of user">
-  <li>{{ user.name }} - {{ user.address }} - {{ user.age }}</li>
-</ul>
-`
+  ta gán \*ngFor ở đâu thì nó sẽ nhân bản theo vòng lặp ra các HTMLElement tương ứng
+  ví dụ:
+  `
+  <!-- <h1>Day 5 - ngFor</h1> -->
+  <ul *ngFor="let user of user">
+    <li>{{ user.name }} - {{ user.address }} - {{ user.age }}</li>
+  </ul>
+  `
 
 ## thì trong HTML file sẽ tạo ra được 3 phần tử ul chứa các li tương ứng với vòng lặp
 
 `
 
-<h1>Day 5 - ngFor</h1>
+<!-- <h1>Day 5 - ngFor</h1> -->
 <ul>
   <li *ngFor="let user of user">{{ user.name }} - {{ user.address }} - {{ user.age }}</li>
 </ul>
